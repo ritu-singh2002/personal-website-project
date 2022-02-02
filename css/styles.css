@@ -6,8 +6,6 @@ h1{
     right: 20%;
     left:20%;
     top: 23%;
-    /*width: 30%;
-    margin: 0 auto 0 auto; [T R B L]*/
     font-family: 'Courgette', cursive;
     font-size: 375%;
     color: #5ea05b;
@@ -80,7 +78,7 @@ div{
 }
 .row{
     width: 50%;
-    margin: 100px auto 100px auto; /* auto margin mean center from sides or side */
+    margin: 100px auto 100px auto; 
     text-align: left;
     line-height: 2;
 }
@@ -170,7 +168,7 @@ hr {
     border-radius: 8px;
     background-image: linear-gradient(#7ec172, #5ea05b);
     padding: 10px 15px 10px 15px;
-    text-decoration: none; /*by default link always gets underline to override it we have done none*/
+    text-decoration: none; 
     color: whitesmoke;
 }
 .btn:hover{
