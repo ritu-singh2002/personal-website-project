@@ -1,1 +1,1 @@
-# personal-website-project [First Version using only html & css]
+# portfolio-website-project [First Version using only html & css]
