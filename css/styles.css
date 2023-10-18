@@ -190,14 +190,22 @@ hr {
     
 }
 
-/* .project{
-    text-decoration: none;
-    color: #7ec172;
+.cv{
+    background-image: linear-gradient(#7ec172, #5ea05b);
+    width: fit-content;
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+    text-decoration: none; 
+    color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
-.project:hover{
-    color: #3e7543;
-}  */
+.cv:hover{
+    background-image: linear-gradient(#5ea05b,#3e7543);
+}
 
 .footer-link{
     text-decoration: none;
