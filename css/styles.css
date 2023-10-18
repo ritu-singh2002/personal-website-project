@@ -53,6 +53,10 @@ body{
     background-color: #FFEFEF;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 /***********************************MAIN divs***********************************/
 
 div{
@@ -163,24 +167,38 @@ hr {
     padding-bottom: 35px;
 }
 
-/***********************************BUTTONS/LINKS***********************************/
-.btn{
-    border-radius: 8px;
+.mail{
     background-image: linear-gradient(#7ec172, #5ea05b);
+    width: fit-content;
     padding: 10px 15px 10px 15px;
     text-decoration: none; 
     color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
 }
-.btn:hover{
-    background-image: linear-gradient(#5ea05b,#3e7543);
-}
+
+
+/***********************************BUTTONS/LINKS***********************************/
+
 .meTime{
     text-decoration: none;
     color: #7ec172;
 }
 .meTime:hover{
     color: #3e7543;
+    
 }
+
+/* .project{
+    text-decoration: none;
+    color: #7ec172;
+}
+
+.project:hover{
+    color: #3e7543;
+}  */
+
 .footer-link{
     text-decoration: none;
     margin: 20px;
