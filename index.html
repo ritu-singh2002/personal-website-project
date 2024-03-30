@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
+  <script defer src="script1.js"></script>
     <div class = "top-container">
         <img class="cloud1" src="images/cloud1.png" alt="cloud-image" height="10%" width = "8%">
         <h1>I'm Ritu Singh.</h1>
@@ -104,31 +105,6 @@
     </div>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <script>
-
-      function Send(){
-        /* console.log("function call"); */
-        var name = document.getElementById('Name').value;
-        var email = document.getElementById('Email').value;
-        var msg = document.getElementById('message').value;
-
-        var body = "Name: " + name + "<br/> Email: " + email + "<br/> Message: " + msg;
-
-        Email.send({
-          Host : "smtp.elasticemail.com",
-          Username : "ritusingh.19.or@gmail.com",
-          Password : "681CA11A24E6622D757C48B8AA223A775332",
-          To : 'ritusingh.19.or@gmail.com',
-          From : "ritusingh.19.or@gmail.com",
-          Subject : "Portfolio Website",
-          Body : body
-        }).then(
-          message => alert(message)
-          );
-     }
-
-    </script>
       
 </body>
 </html>
