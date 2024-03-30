@@ -178,6 +178,70 @@ hr {
     margin-bottom: 35px;
 }
 
+.contact-box{
+    width: 38%;
+    padding-left: 31%;
+    text-align: left;
+}
+
+.contact-box h3{
+    text-align: center;
+}
+
+.contact-row{
+    display: flex;
+    justify-content: space-between ;
+    margin-bottom: 20px;
+}
+
+.contact-row .Contact-grp{
+    flex-basis: 45%;
+}
+
+input {
+    width: 90%;
+    background-color: #FFEFEF;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #ccc;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    outline: none;
+}
+
+textarea{
+    width: 100%;
+    background-color: #FFEFEF;
+    border-color:#ccc;
+    outline: none;
+    margin-top: 10px;
+}
+
+.btn{
+    width: fit-content;
+    border: 1.2px Solid #ccc;
+    text-align: center;
+    margin-top: 12px;
+    margin-left: 46%;
+    background-image: linear-gradient(#7ec172, #5ea05b);
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+    text-decoration: none; 
+    color: whitesmoke;
+    
+}
+
+.btn:hover{
+    background-image: linear-gradient(#5ea05b,#3e7543);
+}
+
+
+/* .con{
+    text-align: left;
+    padding-left: 350px;
+} */
+
 
 /***********************************BUTTONS/LINKS***********************************/
 

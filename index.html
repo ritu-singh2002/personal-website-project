@@ -36,20 +36,20 @@
         <div class="skills">
           <h2>My Skills.</h2>
           <div class="row">
-            <img class="app-dev" src="images/android-dev.png" alt="android-dev">
-            <h3>Android Development</h3>
-            <p>I'm an Android developer proficient in Java and Firebase, creating intuitive mobile applications. I have experience in developing a Mental Health App called <a class="meTime" href="https://drive.google.com/file/d/1Tm3x5LMZNXw5iYFHfIsr0MO_QlFr3f9K/view?usp=sharing">meTime</a>.  </p>
+            <img class="app-dev" src="images/soft-dev.png" alt="android-dev">
+            <h3>Software Development</h3>
+            <p>I'm proficient in Java and have a solid grasp of DSA. I continuously enhance my skills, staying committed to learning and refining my skills in software development.</p>
           </div>
           <div class="row">
             <img class="web-dev" src="images/web-dev.png" alt="web-dev">
             <h3>Web Development</h3>
-            <p>I'm a web developer experienced in HTML, CSS, JavaScript, React, Bootstrap, PHP, and MySQL.</p>
+            <p>I'm a Web developer experienced in HTML, CSS, JavaScript, React and Bootstrap. I have experience of working on various web dev <a class="meTime" href="https://github.com/ritu-singh2002">projects</a> which helped me in refining practical skills in these languages.</p>
           </div></p>
           </div>
           <div class="row">
-            <img class="python" src="images/soft-dev.png" alt="python">
-            <h3 class="python-text">Software Development</h3>
-            <p class="python-text">I develop software in Java, specializing in creating efficient applications with a user-friendly interface.</p>
+            <img class="python" src="images/android-dev.png" alt="python">
+            <h3 class="python-text">Android Development</h3>
+            <p class="python-text">I'm an Android developer proficient in Java and Firebase, creating intuitive mobile applications. I have experience in developing a Mental Health App called <a class="meTime" href="https://drive.google.com/file/d/1Tm3x5LMZNXw5iYFHfIsr0MO_QlFr3f9K/view?usp=sharing">meTime</a>.  </p>
           </div>
         </div>
         <div class="hobbies">
@@ -77,13 +77,58 @@
           <h3 class="margin-top">I'm always up for collaborative projects, work, or even for a hi!</h3>
           <p class="margin-top">I love learning together, exploring new ventures, and working on projects.</p>
           <p class="margin-bot">Most importantly, I enjoy connecting with people through conversations.</p>
-          <p class="mail" >CONTACT ME : ritusingh.19.or@gmail.com</p>
+          <!-- <p class="mail" >CONTACT ME : ritusingh.19.or@gmail.com</p> -->
+    </div>
+    <div class="contact-box">
+      <h3 class="con">Contact Me</h3>
+      <form action="">
+        <div class="contact-row">
+          <div class="contact-grp">
+            <label for="">Name</label>
+            <input type="text" id="Name" placeholder="">
+          </div>
+          <div class="Contact-grp">
+            <label for="">Email</label>
+            <input type="email" id="Email" placeholder="">
+          </div>
+        </div>
+        <label for="">Message</label>
+        <textarea rows="6" id="message"></textarea>      
+        <input class="btn" type="button" value="SEND" onclick="Send()">
+      </form>
     </div>
     <div class="bottom-container">
         <p class="margin-top"><a class="footer-link" href="https://www.linkedin.com/in/ritu-singh-19a885205/">LinkedIn</a>
         <a class="footer-link" href="https://github.com/ritu-singh2002">GitHub</a></p>
         <p class="footer" >© 2022 Ritu Singh.</p>
     </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+
+      function Send(){
+        /* console.log("function call"); */
+        var name = document.getElementById('Name').value;
+        var email = document.getElementById('Email').value;
+        var msg = document.getElementById('message').value;
+
+        var body = "Name: " + name + "<br/> Email: " + email + "<br/> Message: " + msg;
+
+        Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "ritusingh.19.or@gmail.com",
+          Password : "681CA11A24E6622D757C48B8AA223A775332",
+          To : 'ritusingh.19.or@gmail.com',
+          From : "ritusingh.19.or@gmail.com",
+          Subject : "Portfolio Website",
+          Body : body
+        }).then(
+          message => alert(message)
+          );
+     }
+
+    </script>
       
 </body>
 </html>
